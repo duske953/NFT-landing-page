@@ -1,0 +1,135 @@
+.hero-section {
+    &__bt {
+        text-transform: uppercase;
+        background-color: $color-base-2;
+        padding: 1.2rem 2.4rem;
+        display: inline-block;
+        color: $color-primary-text;
+        font-size: 1.4rem;
+
+        // @media (max-width:$media-3) {
+        //     font-size: ;
+        // }
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: $grid-gap-sm;
+
+        @media (max-width:$media-2) {
+            gap: 1.2rem;
+        }
+
+        @media (max-width:$media-3) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__img-box {
+        // position: relative;
+    }
+
+    &__content {
+        @media (max-width:$media-3) {
+            text-align: center;
+        }
+    }
+
+
+    &__img-container {
+        position: relative;
+
+        @media (max-width:$media-3) {
+            text-align: center;
+        }
+    }
+
+    &__img {
+        width: $primary-img-width;
+        // height: 100%;
+
+        @media (max-width:$media-3) {
+            width: 85%;
+        }
+
+        @media (max-width:$media-5) {
+            width: 95%;
+        }
+
+        @media (max-width:$media-6) {
+            width: 100%;
+        }
+    }
+
+    &__btns {
+        display: flex;
+        gap: 2.4rem;
+
+        @media (max-width:$media-3) {
+            justify-content: center;
+            margin-bottom: 2.4rem;
+        }
+    }
+
+    &__img-text-box {
+        position: absolute;
+        bottom: 2.4rem;
+        left: 3.4rem;
+        color: $color-primary-text;
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width:$media-3) {
+            left: 11rem;
+            bottom: 3rem;
+        }
+
+        @media (max-width:$media-5) {
+            left: 3.2rem;
+        }
+
+        & span:first-child {
+            font-size: 1.4rem;
+        }
+
+        & span:last-child {
+            font-size: 1.8rem;
+            font-weight: 500;
+        }
+    }
+
+    &__lt {
+        position: absolute;
+        right: -2.6rem;
+        bottom: -2.5rem;
+        color: $color-primary-text;
+        background-image: linear-gradient(to right bottom, $color-primary-1, $color-primary-2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.2rem 3.6rem;
+
+        @media (max-width:$media-3) {
+            right: 4.5rem
+        }
+
+        @media(max-width:$media-6) {
+            right: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: inherit
+        }
+
+        & span:first-child {
+            font-weight: 500;
+            font-size: 1.6rem;
+        }
+
+        & span:last-child {
+
+            font-size: 1.2rem;
+        }
+
+    }
+}

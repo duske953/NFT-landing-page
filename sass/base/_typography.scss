@@ -1,0 +1,46 @@
+.primary-heading {
+    font-size: 5.4rem;
+    font-weight: 500;
+    color: $color-primary-text;
+    line-height: 1.5;
+
+    @media (max-width:$media-3) {
+        font-size: 4.4rem;
+    }
+
+    @media (max-width:$media-6) {
+        font-size: 4rem;
+    }
+
+    &--sub {
+        background-image: linear-gradient(to left, $color-primary-1, $color-primary-2);
+        -webkit-background-clip: text;
+        color: transparent
+    }
+}
+
+.primary-text {
+    color: $color-primary-text;
+    font-size: 1.8rem;
+    line-height: 1.7;
+
+    @media (max-width:$media-3) {
+        font-size: 2.2rem;
+    }
+}
+
+.secondary-heading {
+    font-size: 3rem;
+    font-weight: 400;
+    color: $color-primary-text
+}
+
+.secondary-text {
+    color: $color-primary-text;
+    font-size: 1.8rem;
+
+    @media(max-width:$media-5) {
+        font-size: 2rem;
+    }
+
+}

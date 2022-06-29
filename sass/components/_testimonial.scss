@@ -1,0 +1,99 @@
+.section-testimonial {
+    &__box {
+        background-color: $color-base-2;
+        padding: 4.4rem 7.4rem;
+        position: relative;
+
+        @media (max-width:$media-3) {
+            padding: 4.4rem 5.4rem;
+        }
+
+        @media (max-width:$media-5) {
+            padding: 3.6rem 1.4rem;
+        }
+    }
+
+    &__testimonial {
+        // width: 75%;
+        color: $color-tertiary-text;
+        font-size: 2rem;
+        line-height: 1.8;
+        margin-bottom: 4.4rem;
+
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        width: 75%;
+        margin: 0 auto;
+
+        @media (max-width:$media-4) {
+            width: 100%;
+        }
+    }
+
+    &__content::after {
+        content: "\201C";
+        font-size: 50rem;
+        color: $color-primary-1;
+        position: absolute;
+        top: -12rem;
+        left: 1.4rem;
+        line-height: 1;
+        font-family: sans-serif;
+
+        @media (max-width:$media-3) {
+            font-size: 30rem;
+            top: -8rem
+        }
+    }
+
+    &__user-info {
+        margin-right: auto;
+    }
+
+    &__user {
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+        gap: 1.4rem;
+    }
+
+    &__user-name {
+        font-size: 1.6rem;
+        color: $color-tertiary-text;
+        font-weight: 500;
+    }
+
+    &__user-job {
+        font-size: 1.4rem;
+        color: $color-grey-1
+    }
+
+    &__user-img {
+        width: 5.4rem;
+        height: 5.4rem;
+        object-fit: cover;
+        border-radius: 100px;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 1.4rem;
+    }
+
+    &__btn {
+        display: inline-block;
+        height: 0.6rem;
+        width: 0.6rem;
+        border-radius: 100px;
+        background-color: $color-grey-1;
+    }
+}
+
+.btn--active {
+    background-color: $color-primary-1
+}

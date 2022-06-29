@@ -1,0 +1,29 @@
+.btn:link,
+.btn:visited {
+    background: none;
+    color: $color-primary-text;
+    font-size: 1.8rem;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.primary-button:link,
+.primary-button:visited {
+    padding: 1.3rem 4.4rem;
+    background-image: linear-gradient(to right bottom, $color-primary-1, $color-primary-2);
+}
+
+.secondary-button:link,
+.secondary-button:visited {
+    border: 2px solid;
+    border-image: linear-gradient(45deg, $color-primary-1, $color-primary-2) 1;
+    padding: 1.2rem 4.4rem;
+}
+
+.link-text:link,
+.link-text:visited {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: $color-primary-1;
+    align-self: flex-end;
+}

@@ -1,0 +1,114 @@
+.section-auctions {
+
+    &__card {
+        width: 100%;
+        background-color: $color-base-2;
+        padding: 1rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+    }
+
+    &__info {
+        padding: 1.6rem;
+    }
+
+    // &__container figure:last-child {
+    //     @media (max-width:$media-3) {
+    //         grid-column: -3/-1;
+    //         justify-self: center;
+    //         width: 50%;
+    //     }
+    // }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: $grid-gap-sm;
+
+        @media(max-width:$media-3) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        & figure:last-child {
+            @media (max-width:$media-3) {
+                grid-column: -3/-1;
+                justify-self: center;
+                width: 50%;
+            }
+
+            @media(max-width:$media-5) {
+                grid-column: 1;
+                width: 100%;
+            }
+        }
+
+        @media (max-width:$media-5) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__img-box {
+        position: relative;
+        height: 100%;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    &__type {
+        font-size: 1.8rem;
+        color: $color-primary-text
+    }
+
+
+    &__name {
+        color: $color-primary-2;
+        font-size: 1.4rem;
+        margin-bottom: 0.8rem;
+
+        @media(max-width:$media-5) {
+            font-size: 1.8rem;
+        }
+
+    }
+
+    &__bid-container {
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        bottom: 5%;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-image: linear-gradient(to right, #765a75, #8973c9);
+        padding: 1.2rem;
+
+        @media (max-width:$media-3) {
+            padding: 0.8rem;
+        }
+
+    }
+
+    &__bid-currency {
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+
+    &__bid-title {
+        font-style: italic;
+        color: #eee0e9;
+        font-size: 1.2rem;
+    }
+
+    &__bid-time {
+        align-self: flex-end;
+        color: $color-primary-text;
+        font-size: 1.2rem;
+    }
+}

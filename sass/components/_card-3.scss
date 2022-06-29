@@ -1,0 +1,80 @@
+.section-artworks {
+    &__img {
+        width: $primary-img-width;
+        // height: 50%;
+        object-fit: cover;
+        margin-bottom: 1.6rem;
+        height: 30vh;
+    }
+
+    &__container {
+        display: grid;
+        gap: 3.6rem;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    &__container {
+        @media(max-width:81.25em) {
+            grid-template-columns: repeat(3, 1fr)
+        }
+
+        @media (max-width:$media-3) {
+            grid-template-columns: repeat(2, 1fr)
+        }
+
+        @media (max-width:$media-5) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__card {
+        background-color: $color-base-2;
+        padding-bottom: 2rem;
+        // height: 50vh;
+    }
+
+
+    &__content {
+        padding-left: 1.4rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid $color-tertiary-text;
+    }
+
+    &__user {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+
+    }
+
+    &__name {
+        font-size: 1.6rem;
+        font-weight: 500;
+        background-image: linear-gradient(to left, $color-primary-1, $color-primary-2);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    &__user-img {
+        width: 4.4rem;
+        height: 4.4rem;
+        object-fit: cover;
+        border-radius: 100px;
+    }
+
+    &__price-box {
+        padding-left: 1.4rem;
+        margin-top: 2.4rem;
+    }
+
+    &__title {
+        color: $color-tertiary-text;
+        font-size: 1.4rem;
+    }
+
+    &__price {
+        color: $color-tertiary-text;
+        font-size: 1.8rem;
+        font-size: 500;
+    }
+}
