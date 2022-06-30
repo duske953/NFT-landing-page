@@ -111,3 +111,15 @@
         font-size: 2.4rem;
     }
 }
+
+.author{
+    text-align: center;
+    color:$color-primary-text;
+    font-size: 1.8rem;
+    padding:2rem;
+
+    &-info a:link,&-info a:visited{
+        text-decoration: none;
+        color:$color-secondary-text;
+    }
+}
