@@ -1,23 +1,22 @@
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
-
-    @media (max-width:$media-2) {
-        font-size: 50%;
-    }
+  font-size: 62.5%;
+  overflow-x: hidden;
+  @media (max-width: $media-2) {
+    font-size: 50%;
+  }
 }
 
 body {
-    font-family: 'Rubik',
-        sans-serif;
-    line-height: 1.6;
-    background-color: $color-base-1;
+  font-family: 'Rubik', sans-serif;
+  overflow-x: hidden;
+  line-height: 1.6;
+  background-color: $color-base-1;
 }
